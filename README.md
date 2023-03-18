@@ -18,12 +18,17 @@ Initial Contract Column | Final Contract Column
 * ***IF(ISNUMBER(K2),"On Contract",IF(ISNUMBER(SEARCH("Loan",K2)),"On Loan",IF(ISNUMBER(SEARCH("Free",K2)),"Free","")))*** argument was used to Extract the contract Type 
 * ***M2-YEAR(T2)*** argument used to determine the years the players of each player 
 
+![Alt Text](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/initial_height_weight.png) ![Alt Text](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/Height_Weight.png)
+
 * The *height* Column was formatted using the argument ***IF(ISNUMBER(SEARCH("cm",P2)),CONCATENATE((INT((LEFT(P2,3))/30.48)),"'",ROUND((LEFT(P2,3)/2.54)-(INT(LEFT(P2,3)/30.48)*12),0),""""),P2)***. This formatted the height into ft and inches
 
 * The *Weight* column was formatted using the argument
 ***IF(ISNUMBER(SEARCH("kg",R2)),ROUND(CONVERT(SUBSTITUTE(R2,RIGHT(R2,2),""),"kg","lbm"),0),SUBSTITUTE(R2,RIGHT(R2,3),""))***. This convert the weight into lbs rounded the number to nearest whole value 
 
+
 * The *Value* column was formatted using the argument ***IF(ISNUMBER(SEARCH("M",Y2)),SUBSTITUTE(Y2,RIGHT(Y2,1),"")*1000000,IF(RIGHT(Y2,1)="K",SUBSTITUTE(Y2,RIGHT(Y2,1),"")*1000,NUMBERVALUE(Y2)))
+
+
 
 * The *weekly wage* column was formatted using the argument ***IF(RIGHT(AA2,1)="K",SUBSTITUTE(AA2,RIGHT(AA2,1),"")*1000,NUMBERVALUE(AA2))
 
@@ -33,4 +38,12 @@ The IR,W/F and SM was formattied using the Text to columns to remove the special
   
 ![](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/IR_SM.png)
 
+####  Snipnet of the cleaned data 
 
+![Alt Text](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/Screenshot%20(32).png)
+
+![Alt Text](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/Screenshot%20(33).png)
+
+![Alt Text](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/Screenshot%20(34).png)
+
+[Click Here to download the Clean data](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/FIFA21_cleaned_dataset.xlsx)
