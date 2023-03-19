@@ -28,7 +28,7 @@
 ***
 
 * The raw what imported into the Google sheets and then downloaded into Excel Spreadsheets. This process took care of the special characters in the Long name column.
-* There no empty cells on the ***Nationality*** Colums  
+* There no empty cells on the ***Nationality*** Column   
 * The ***age*** column was checked for outliners. I founf three players with ages of 43 and 53. I checked it out online and found that it was true. So the age columns was left as it.
 * The ***Club*** column was checked for missing values 
 
