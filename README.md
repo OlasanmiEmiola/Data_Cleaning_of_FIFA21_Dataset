@@ -1,6 +1,6 @@
 # **DATA CLEANING CHALLENGE**
 ***
-![Alt Text](https://github.com/OlasanmiEmiola/FIFA21_Dataset/blob/main/no-revisions-cpIgNaazQ6w-unsplash.jpg)
+![Alt Text](https://github.com/OlasanmiEmiola/Data_Cleaning_of_FIFA21_Dataset/blob/main/Data-Cleaning-scaled.jpeg)
 
 ***
 ## Introduction 
